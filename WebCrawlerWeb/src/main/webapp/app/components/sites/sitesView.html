@@ -1,0 +1,14 @@
+<div class="row">
+    <div ng-repeat="site in sites.sites" class="col-md-4 portfolio-item">
+        <a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
+            <a href="#">{{site.name}}</a>
+        </h3>
+        <p>{{site.description}}</p>
+        <div class="more">
+            <button class="hvr-bounce-to-bottom sint" href="#" ng-click="sites.crawl()" role="button">Crawl</button>
+        </div>
+    </div>
+</div>
